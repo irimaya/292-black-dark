@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.9em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.large {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.display-1 {
+  font-size: 4.5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding: 12px 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+}
+.btn-light {
+  background: #fff;
+  color: #000;
+}
+.btn-dark {
+  background: #000;
+  color: #fff;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-control {
+  display: block;
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.bk-primary {
+  background: #000;
+}
+
+.bk-dark {
+  background: #000;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+#navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+#navbar .container .logo img {
+  height: 50px;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar ul li {
+  margin-left: 40px;
+  text-transform: uppercase;
+}
+#navbar ul li a {
+  color: #fff;
+}
+
+#showcase {
+  padding: 20px 0;
+  color: #fff;
+}
+#showcase .bk-primary {
+  padding: 40px 80px;
+}
+#showcase .bk-primary p {
+  padding: 10px 0;
+}
+
+#features .container {
+  display: grid;
+  padding: 20px 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+#features .container img {
+  width: 100%;
+}
+
+#title .container {
+  padding-top: 80px;
+}
+
+#portfolio .container {
+  padding: 20px 0;
+}
+#portfolio .container .portfolio-box {
+  display: flex;
+  padding-bottom: 40px;
+}
+#portfolio .container .portfolio-box-image {
+  flex: 1;
+}
+#portfolio .container .portfolio-box-image img {
+  width: 100%;
+}
+#portfolio .container .portfolio-box-text {
+  flex: 2;
+  padding-left: 20px;
+}
+
+#portfolio-item {
+  padding: 20px 0;
+}
+#portfolio-item img {
+  width: 100%;
+}
+#portfolio-item p {
+  padding-bottom: 20px;
+}
+
+#about {
+  padding: 80px 0;
+}
+#about p {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+#contact {
+  padding: 80px 0;
+}
+#contact form {
+  width: 50%;
+}
+#contact form button {
+  width: 100%;
+}
+
+#home-footer .container {
+  text-align: center;
+  padding: 30px;
+}
+
+@media (max-width: 700px) {
+  #navbar .container {
+    flex-direction: column;
+  }
+  #navbar ul li {
+    margin-left: 0;
+    padding: 15px;
+  }
+  #portfolio .container .portfolio-box {
+    flex-direction: column;
+  }
+  #about {
+    padding: 40px 0;
+  }
+  #about p {
+    width: 100%;
+  }
+  #contact {
+    padding: 40px 0;
+  }
+  #contact form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

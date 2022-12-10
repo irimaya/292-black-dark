@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-stack: 'Montserrat', sans-serif;
+
+// Reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// Main Styling
+html,
+body {
+	font-family: $font-stack;
+	background: #000;
+	color: #fff;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1rem;
+	margin: 10px 0;
+	line-height: 1.9em;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Utility Classes
+.container {
+	margin: auto;
+	max-width: 1300px;
+	overflow: auto;
+	padding: 0 20px;
+}
+
+.large {
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.display-1 {
+	font-size: 4.5rem;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	padding: 12px 23px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border: none;
+	&-light {
+		background: #fff;
+		color: #000;
+	}
+	&-dark {
+		background: #000;
+		color: #fff;
+	}
+} //End .btn
+
+form {
+	label {
+		display: inline-block;
+		margin-bottom: 6px;
+	}
+	.form-group {
+		margin-bottom: 16px;
+	}
+	.form-control {
+		display: block;
+		width: 100%;
+		padding: 7px 12px;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: #495057;
+		background-color: #fff;
+		border: 1px solid #ced4da;
+		border-radius: 4px;
+	}
+} //End form
+
+.bk-primary {
+	background: #000;
+}
+
+.bk-dark {
+	background: #000;
+}
+
+.current {
+	text-decoration: underline;
+}
+
+// Nav
+#navbar {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		.logo img {
+			height: 50px;
+		}
+	}
+	ul {
+		display: flex;
+		list-style: none;
+		li {
+			margin-left: 40px;
+			text-transform: uppercase;
+			a {
+				color: #fff;
+			}
+		}
+	}
+} //End #navbar
+
+// Showcase
+#showcase {
+	padding: 20px 0;
+	color: #fff;
+	.bk-primary {
+		padding: 40px 80px;
+		p {
+			padding: 10px 0;
+		}
+	}
+} //End #showcase
+
+// Features
+#features {
+	.container {
+		display: grid;
+		padding: 20px 0;
+		grid-template-columns: repeat(2, 1fr);
+		img {
+			width: 100%;
+		}
+	}
+}
+
+// Title
+#title {
+	.container {
+		padding-top: 80px;
+	}
+}
+
+// Portfolio
+#portfolio {
+	.container {
+		padding: 20px 0;
+		.portfolio-box {
+			display: flex;
+			padding-bottom: 40px;
+			&-image {
+				flex: 1;
+				img {
+					width: 100%;
+				}
+			}
+			&-text {
+				flex: 2;
+				padding-left: 20px;
+			}
+		}
+	}
+} //End #portfolio
+
+// Portfolio Item
+#portfolio-item {
+	padding: 20px 0;
+	img {
+		width: 100%;
+	}
+	p {
+		padding-bottom: 20px;
+	}
+}
+
+// About
+#about {
+	padding: 80px 0;
+	p {
+		width: 50%;
+		padding-bottom: 20px;
+	}
+}
+
+// Contact
+#contact {
+	padding: 80px 0;
+	form {
+		width: 50%;
+		button {
+			width: 100%;
+		}
+	}
+}
+
+// Footer
+#home-footer {
+	.container {
+		text-align: center;
+		padding: 30px;
+	}
+} //End #mainfooter
+
+@import 'mobile';

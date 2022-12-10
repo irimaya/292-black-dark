@@ -1,0 +1,39 @@
+@media (max-width: 700px) {
+	// Nav
+	#navbar {
+		.container {
+			flex-direction: column;
+		}
+		ul {
+			li {
+				margin-left: 0;
+				padding: 15px;
+			}
+		}
+	} //End #navbar
+
+	// Portfolio
+	#portfolio {
+		.container {
+			.portfolio-box {
+				flex-direction: column;
+			}
+		}
+	} //End #portfolio
+
+	// About
+	#about {
+		padding: 40px 0;
+		p {
+			width: 100%;
+		}
+	}
+
+	// Contact
+	#contact {
+		padding: 40px 0;
+		form {
+			width: 100%;
+		}
+	}
+}
